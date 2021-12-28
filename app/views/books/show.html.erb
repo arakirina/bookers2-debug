@@ -1,3 +1,10 @@
+<% if @book_comment.errors.any? %>
+  <%= @book_comment.errors.count %>errors prohibited this obj from being saved:
+  <% @book_comment.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
 <div class='container'>
   <div class='row'>
     <div class='col-md-3'>
