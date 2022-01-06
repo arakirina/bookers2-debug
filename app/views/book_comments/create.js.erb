@@ -1,0 +1,4 @@
+$('#comment_area').html("<%= j(render "book_comments/book_comments" , book:@showbook) %>");
+$("textarea").val('');
+<!--テキストエリアを空にしてくれる-->
+<!--createアクションで定義したものでしかここでは使えない、-->
