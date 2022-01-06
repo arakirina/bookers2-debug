@@ -7,7 +7,7 @@ class Book < ApplicationRecord
 	has_many :book_comments, dependent: :destroy
 
 	def favorited_by?(current_user)
-		favorites.where(user_id: user.id).exists?
+		favorites.where(user_id: current_user.id).exists?
 	end
 
 end
