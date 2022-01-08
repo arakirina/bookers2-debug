@@ -1,1 +1,3 @@
 $('#comment_area').html("<%= j(render "book_comments/book_comments" , book:@showbook) %>");
+<!--#で始まっている（HTML要素の中で「id」（CSSで指定するやつ）に該当する＃以降はrenderを埋め込む先のViewファイルで統一できていたら命名は自由）-->
+<!--(render前の「j」は、jsを介したRubyの埋め込みのためjが入る-->
